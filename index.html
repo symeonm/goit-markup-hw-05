@@ -21,7 +21,7 @@
     <header class="header">
       <div class="container main-nav">
         <div class="site-logo">
-          <a href="/goit-markup-hw-04/index.html" class="logo"
+          <a href="./index.html" class="logo"
             ><span class="logo-blue">Web</span>Studio</a
           >
         </div>
@@ -29,7 +29,10 @@
           <nav>
             <ul class="site-nav">
               <li class="item">
-                <a href="/goit-markup-hw-04/" class="link-nav">Студія</a>
+                <a href="./index.html" class="link-nav accent-page"
+                  >Студія
+                  <div class="the-page"></div
+                ></a>
               </li>
               <li class="item">
                 <a href="./portfolio.html" class="link-nav">Портфоліо</a>
@@ -76,6 +79,7 @@
               class="button-order"
               width="216px"
               height="50px"
+              data-modal-open
             >
               Замовити послугу
             </button>
@@ -464,5 +468,17 @@
         </div>
       </div>
     </footer>
+
+    <!--Modal-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg width="30px" height="30px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
